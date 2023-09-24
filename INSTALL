@@ -26,9 +26,9 @@ GRAY = '\033[30m'
 dir_path = os.getcwd()
 script_path = dir_path + "/W-Killer.py"
 
-def apt_install(package):
+def pacman_install(package):
     print(f" \n{LIGHTORANGE}* {LIGHTGRAY}Installing {CYAN}{package}{LIGHTGRAY}...\n")
-    os.system('sudo apt -y install '+package)
+    os.system('sudo pacman -Syu '+package)
     os.system('clear')
 def pip_install(package):
     print(f" \n{LIGHTORANGE}* {LIGHTGRAY}Installing {CYAN}{package}{LIGHTGRAY}...\n")
@@ -59,9 +59,8 @@ except KeyboardInterrupt:
 os.system('clear')
 
 
-apt_install("aircrack-ng")
-apt_install("mdk4")
-
+pacman_install("aircrack-ng")
+pacman_install("mdk4")
 pip_install('scapy')
 
 print(f"{CYAN}* {GREEN}Fixing {LIGHTGRAY}permissions...\n")
@@ -77,7 +76,7 @@ os.system('clear')
 if 'n' in addPath.lower():
     print(f'\n {LIGHTORANGE}* {CYAN}W{LIGHTGRAY}-{LIGHTBLUE}Killer{LIGHTGRAY} has not {LIGHTGRAY}been added to /usr/local/bin')
 else:
-    shutil.copy2(script_path, '/usr/local/bin/w-killer')
+    shutil.copy2(script_path, '/usr/local/bin/wfk')
     print(f'\n {LIGHTGREEN}* {CYAN}W{LIGHTGRAY}-{LIGHTBLUE}Killer{LIGHTGRAY} has been added {LIGHTGRAY}to /usr/local/bin.\n'\
           f'   You can now run the script by typing "{BLUE}sudo w-killer{LIGHTGRAY}" in the terminal.')
 print(f'\n{LIGHTORANGE}Goodbye{LIGHTGRAY}.')
