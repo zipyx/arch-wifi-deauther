@@ -1,7 +1,7 @@
 # Arch-Linux Wi-Fi Deauthenticator
 
-This is a fork of the `wifi-deauther` repo for `arch-linux` installations. For those who don't know. This is simply a
-Wi-Fi killer.
+This is a fork of the [repo]("https://github.com/ZKAW/wifi-deauther/tree/master). For those who don't know. This is simply a
+Wi-Fi killer. I have modified the script for the OS `arch`.
 
 ### Installation (Arch-OS)
 
@@ -10,7 +10,7 @@ Use the installation script `INSTALL` or download the relevant packages manually
 - **One-liner installation**
 
 ```bash
-git clone https://github.com/zipyx/arch-wifi-deauther && cd arch-wifi-deauther && chmod +x INSTALL && sudo ./INSTALL
+git clone https://github.com/zipyx/arch-wifi-killer && cd arch-wifi-killer && chmod +x INSTALL && sudo ./INSTALL
 ```
 
 - **Manual Install**
@@ -18,13 +18,15 @@ git clone https://github.com/zipyx/arch-wifi-deauther && cd arch-wifi-deauther &
 Install the sys packages manually.
 
 ```bash
+# command-line
 aircrack-ng
 mdk4
 ```
 
-Install python packages manually.
+Install `python` packages manually using `pip`.
 
 ```bash
+# command line
 pip install scapy
 ```
 
@@ -34,7 +36,7 @@ Execute the program manually or if you installed the script using the `INSTALL`,
 
 ```bash
 # using python script
-sudo python W-Killer.py
+sudo python wfk.py
 ```
 
 Using `INSTALLER`, must be run using `sudo`
