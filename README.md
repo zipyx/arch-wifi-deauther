@@ -30,7 +30,18 @@ pip install scapy
 
 ### Instructions
 
-Execute the program using the `python` script. If you installed the python script, just run `sudo wfk`
+Execute the program manually or if you installed the script using the `INSTALL`, just run `sudo wfk`
+
+```bash
+# using python script
+sudo python W-Killer.py
+```
+
+Using `INSTALLER`, must be run using `sudo`
+
+```bash
+sudo wfk
+```
 
 ### Note
 

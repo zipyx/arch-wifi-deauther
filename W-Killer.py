@@ -42,12 +42,12 @@ def welcomeMsg():
     print(f"{LIGHTORANGE}Welcome")
     print(f"      {ORANGE}To")
     print('''
-{2}   ██╗    ██╗      ██╗  ██╗██╗██╗     ██╗     ███████╗██████╗ 
-{2}   ██║    ██║      ██║ ██╔╝██║██║     ██║     ██╔════╝██╔══██╗
-{2}   ██║ █╗ ██║█████╗█████╔╝ ██║██║     ██║     █████╗  ██████╔╝
-{1}   ██║███╗██║╚════╝██╔═██╗ ██║██║     ██║     ██╔══╝  ██╔══██╗
-{1}   ╚███╔███╔╝      ██║  ██╗██║███████╗███████╗███████╗██║  ██║
-{1}    ╚══╝╚══╝       ╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝╚═╝  ╚═╝
+{2}   ██╗    ██╗███████╗██╗  ██╗
+{2}   ██║    ██║██╔════╝██║ ██╔╝
+{2}   ██║ █╗ ██║█████╗  █████╔╝ 
+{1}   ██║███╗██║██╔══╝  ██╔═██╗ 
+{1}   ╚███╔███╔╝██╗     ██╗ ██║ 
+{1}    ╚══╝╚══╝ ╚═╝     ╚═╝ ╚═╝ 
                                                            
                                                         {3}╔╗ ┬ ┬  ╔═╗╦╔═╔═╗╦ ╦
                                                  {0}───    {4}╠╩╗└┬┘  ╔═╝╠╩╗╠═╣║║║
@@ -59,7 +59,7 @@ def is_root():
     return os.geteuid() == 0
 
 def quitGracefully(clear=True):
-    print(f"\n{LIGHTGRAY}Thank you for using {CYAN}W{LIGHTGRAY}-{LIGHTBLUE}Killer{LIGHTGRAY}.\n")
+    print(f"\n{LIGHTGRAY}Thank you for using {CYAN}WF{LIGHTGRAY}-{LIGHTBLUE}K{LIGHTGRAY}.\n")
     try:
         if clear == True:
             os.system('clear')
