@@ -50,8 +50,8 @@ def welcomeMsg():
 {1}    ╚══╝╚══╝ ╚═╝     ╚═╝ ╚═╝ 
                                                            
                                                         {3}╔╗ ┬ ┬  ╔═╗╦╔═╔═╗╦ ╦
-                                                 {0}───    {4}╠╩╗└┬┘  ╔═╝╠╩╗╠═╣║║║
-    {0}-> {3}v1{0}.{4}5{0}                                             {3}╚═╝ ┴   ╚═╝╩ ╩╩ ╩╚╩╝
+                                              {0}───    {4}╠╩╗└┬┘  ╔═╝╠╩╗╠═╣║║║
+    {0}-> {3}v1{0}.{4}5{0}                              {3}╚═╝ ┴   ╚═╝╩ ╩╩ ╩╚╩╝
                                       {2}The possible is already done,
                                                {1}working on the impossible.'''.format(LIGHTGRAY, BLUE, CYAN, ORANGE, LIGHTORANGE))
 
@@ -83,7 +83,7 @@ def quitGracefully(clear=True):
     except:
         pass
     print(f"{LIGHTGRAY}Don't forget to {GREEN}like {LIGHTGRAY}the repos on {CYAN}github {LIGHTGRAY}! :)")
-    print(f"{LIGHTBLUE}* {GREEN}https://github.com/ZKAW/wifi-deauther")
+    print(f"{LIGHTBLUE}* {GREEN}https://github.com/zipyx/arch-wifi-deauther")
     print(f'{LIGHTORANGE}Goodbye{LIGHTGRAY}.')
     exit(0)
 

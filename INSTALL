@@ -24,7 +24,7 @@ WHITE = '\033[97m'
 GRAY = '\033[30m'
 
 dir_path = os.getcwd()
-script_path = dir_path + "/W-Killer.py"
+script_path = dir_path + "/wfk.py"
 
 def pacman_install(package):
     print(f" \n{LIGHTORANGE}* {LIGHTGRAY}Installing {CYAN}{package}{LIGHTGRAY}...\n")
@@ -48,8 +48,8 @@ if not is_root():
 try:
     print(f"{LIGHTORANGE}Welcome")
     print(f"      {ORANGE}To")
-    input(f"        {CYAN}W{LIGHTGRAY}-{LIGHTBLUE}Killer{LIGHTGRAY} {CYAN}installation{LIGHTGRAY}.\n\n"\
-          f"   {CYAN}-> {LIGHTGRAY}Press {GREEN}ENTER {LIGHTGRAY}to {GREEN}install {LIGHTGRAY}the required packages for {CYAN}W{LIGHTGRAY}-{LIGHTBLUE}Killer{LIGHTGRAY}.\n"\
+    input(f"        {CYAN}WF{LIGHTGRAY}-{LIGHTBLUE}K{LIGHTGRAY} {CYAN}installation{LIGHTGRAY}.\n\n"\
+          f"   {CYAN}-> {LIGHTGRAY}Press {GREEN}ENTER {LIGHTGRAY}to {GREEN}install {LIGHTGRAY}the required packages for {CYAN}WF{LIGHTGRAY}-{LIGHTBLUE}K{LIGHTGRAY}.\n"\
           f"   {CYAN}-> {LIGHTGRAY}Press {ORANGE}CTRL{LIGHTGRAY}+{ORANGE}C {LIGHTGRAY}to {ORANGE}abort{LIGHTGRAY}.")
 except KeyboardInterrupt:
     os.system('clear')
@@ -68,15 +68,15 @@ os.system(f"chmod +x {script_path}")
 os.system('clear')
 
 try:
-    addPath = input(f'\n  {LIGHTGRAY}Add {CYAN}W{LIGHTGRAY}-{LIGHTBLUE}Killer{LIGHTGRAY} to /usr/local/bin\n  So you can access it from "{BLUE}w-killer{LIGHTGRAY}" cmd line ? ({GREEN}Y{LIGHTGRAY}/{LIGHTBLUE}n{LIGHTGRAY}) > {ORANGE}')
+    addPath = input(f'\n  {LIGHTGRAY}Add {CYAN}WF{LIGHTGRAY}-{LIGHTBLUE}K{LIGHTGRAY} to /usr/local/bin\n  So you can access it from "{BLUE}wfk{LIGHTGRAY}" cmd line ? ({GREEN}Y{LIGHTGRAY}/{LIGHTBLUE}n{LIGHTGRAY}) > {ORANGE}')
 except KeyboardInterrupt:
     addPath = 'n'
 
 os.system('clear')
 if 'n' in addPath.lower():
-    print(f'\n {LIGHTORANGE}* {CYAN}W{LIGHTGRAY}-{LIGHTBLUE}Killer{LIGHTGRAY} has not {LIGHTGRAY}been added to /usr/local/bin')
+    print(f'\n {LIGHTORANGE}* {CYAN}WF{LIGHTGRAY}-{LIGHTBLUE}K{LIGHTGRAY} has not {LIGHTGRAY}been added to /usr/local/bin')
 else:
     shutil.copy2(script_path, '/usr/local/bin/wfk')
-    print(f'\n {LIGHTGREEN}* {CYAN}W{LIGHTGRAY}-{LIGHTBLUE}Killer{LIGHTGRAY} has been added {LIGHTGRAY}to /usr/local/bin.\n'\
+    print(f'\n {LIGHTGREEN}* {CYAN}WF{LIGHTGRAY}-{LIGHTBLUE}K{LIGHTGRAY} has been added {LIGHTGRAY}to /usr/local/bin.\n'\
           f'   You can now run the script by typing "{BLUE}sudo wfk{LIGHTGRAY}" in the terminal.')
 print(f'\n{LIGHTORANGE}Goodbye{LIGHTGRAY}.')
